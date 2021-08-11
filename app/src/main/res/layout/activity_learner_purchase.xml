@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+
+    android:layout_height="match_parent"
+    tools:context="za.ac.cut.harvestseedpre_school.LearnerPurchase">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:textSize="30sp"
+            android:text="10C"
+            android:onClick="onClick"
+            android:padding="10dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:textColor="#000"
+            android:background="@drawable/card_view_background"
+            android:textStyle="bold"
+            android:id="@+id/tv_tencent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_width="133dp"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:padding="10dp"
+            android:onClick="onClick"
+            android:text="20C"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="@drawable/card_view_background"
+            android:textColor="@color/colorPrimaryText"
+            android:id="@+id/tv_twentycent" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_fiftycent"
+            android:text="50C"
+            android:onClick="onClick"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="@drawable/card_view_background"
+            android:padding="10dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="30sp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:textSize="30sp"
+            android:text="R1"
+            android:onClick="onClick"
+            android:padding="10dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:background="@drawable/card_view_background"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryText"
+            android:id="@+id/tv_onerand"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/tv_tworand"
+            android:layout_width="133dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_view_background"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:padding="10dp"
+            android:text="R2"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_fiferand"
+            android:text="R5"
+            android:onClick="onClick"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="@drawable/card_view_background"
+            android:padding="10dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="30sp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_total"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="R0.00"
+        android:editable="false"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="40sp" />
+
+
+
+    <TextView
+        android:id="@+id/current_balance"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="20sp"
+        android:text="Current Balance: "
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/current_transaction"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:text="Current Transaction: "
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimaryText"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/after_transaction"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:text="After transaction:"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimaryText"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:onClick="onClick"
+            android:id="@+id/btn_submit_transaction"
+            android:background="@drawable/harvest_buttons"
+            android:text="Submit Transaction"
+            android:textColor="@color/colorAccentWhite"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_reset_transaction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textAllCaps="false"
+            android:layout_marginRight="10dp"
+            android:onClick="onClick"
+            android:layout_weight="1"
+            android:background="@drawable/harvest_buttons"
+            android:text="Reset Transaction"
+            android:textColor="@color/colorAccentWhite"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:resizeable="true"
+    android:smallScreens="true"
+    android:normalScreens="true"
+    android:largeScreens="true"
+    android:anyDensity="true"
+    android:padding="5dp"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context="za.ac.cut.harvestseedpre_school.MainActivity">
+
+    <ImageView
+        android:layout_marginTop="40dp"
+        android:layout_width="200dp"
+        android:layout_height="160dp"
+        android:id="@+id/imageView3"
+        android:contentDescription="@string/app_name"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/harvest" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:id="@+id/btn_gotoRegister"
+        android:background="@drawable/harvest_buttons"
+        android:textColor="#fff"
+        android:onClick="onClick"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_gravity="center_horizontal"/>
+    <Button
+        android:id="@+id/btn_gotoLogin"
+        android:onClick="onClick"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="#fff"
+        android:background="@drawable/harvest_buttons"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_gravity="center_horizontal"/>
+    <Button
+        android:id="@+id/btn_gotoIce"
+        android:onClick="onClick"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="In Case of emergency"
+        android:textColor="#fff"
+        android:background="@drawable/harvest_buttons"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_gravity="center_horizontal"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:gravity="center|bottom"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Harvest Seed Pre-School"
+            android:textStyle="bold"
+            android:textColor="@color/colorSecondaryText"/>
+    </LinearLayout>
+
+</LinearLayout>

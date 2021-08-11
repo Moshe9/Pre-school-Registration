@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:orderInCategory="100"
+        android:title="Go Back"
+        app:showAsAction="always"
+        android:id="@+id/mn_cancel_admin"/>
+    <item
+        android:orderInCategory="101"
+        android:title="Learner Control"
+        android:id="@+id/mnu_learner_select"/>
+</menu>

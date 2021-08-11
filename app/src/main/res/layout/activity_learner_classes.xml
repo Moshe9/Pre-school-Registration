@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="za.ac.cut.harvestseedpre_school.LearnerClasses">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+
+        android:text="Choose Classroom to view:"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:padding="36dp"
+        android:layout_height="fill_parent">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/classa"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:clickable="true"
+                android:contentDescription="@string/app_name"
+                android:onClick="onClick"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/classa" />
+
+            <ImageView
+                android:id="@+id/classb"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:clickable="true"
+                android:contentDescription="@string/app_name"
+                android:onClick="onClick"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/classb" />
+
+
+
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/classc"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:clickable="true"
+                android:contentDescription="@string/app_name"
+                android:onClick="onClick"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/classc" />
+
+            <ImageView
+                android:id="@+id/classd"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:clickable="true"
+                android:contentDescription="@string/app_name"
+                android:onClick="onClick"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/classd" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/classe"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:clickable="true"
+                android:contentDescription="@string/app_name"
+                android:onClick="onClick"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/classe" />
+
+            <ImageView
+                android:id="@+id/classf"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:clickable="true"
+                android:contentDescription="@string/app_name"
+                android:onClick="onClick"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/classf" />
+
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

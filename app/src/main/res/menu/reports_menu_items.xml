@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:orderInCategory="100"
+        android:title="Go Back"
+        app:showAsAction="always"
+        android:id="@+id/mnu_reports_cancel"/>
+    <item
+        android:orderInCategory="102"
+        android:title="View Learner Reports"
+        android:id="@+id/mnu_lreps"/>
+    <item
+        android:orderInCategory="101"
+        android:title="View Maintenance Reports"
+        android:id="@+id/mnu_m_reps"/>
+</menu>

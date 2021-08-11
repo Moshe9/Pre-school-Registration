@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="za.ac.cut.harvestseedpre_school">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-feature android:name="android.hardware.=camera" />
+
+    <!-- Messaging permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="za.ac.cut.puo.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <permission
+        android:name="za.ac.cut.harvestseedpre_school.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <application
+        android:name=".HarvestBackendless"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <receiver android:name=".MaintenanceReportWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info" />
+        </receiver>
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="za.ac.cut.Splash" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Splash"
+            android:theme="@style/AppTheme.Base">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".Reciever"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="za.ac.cut.harvestseedpre_school" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".BackendlessNotifications" />
+
+        <activity android:name=".HomePage" />
+        <activity android:name=".RegisterPage" />
+        <activity android:name=".LoginPage" />
+        <activity android:name=".LearnerClasses" />
+        <activity android:name=".MasterAdmin" />
+        <activity android:name=".Reports" />
+        <activity android:name=".Tuckshop" />
+        <activity android:name=".AddLearner" />
+        <activity android:name=".DeleteLearner" />
+        <activity android:name=".ClassA" />
+        <activity android:name=".ClassB" />
+        <activity android:name=".ClassC" />
+        <activity android:name=".ClassD" />
+        <activity android:name=".ClassE" />
+        <activity android:name=".ClassF" />
+        <activity android:name=".RoleUsers" />
+        <activity android:name=".ProfileCheck" />
+        <activity android:name=".EditLearner" />
+        <activity android:name=".ICE" />
+        <activity android:name=".LearnerInformation" />
+        <activity android:name=".LearnerPurchase" />
+        <activity android:name=".LearnerReportView" />
+        <activity android:name=".MaintenanceReportView" />
+        <activity android:name=".SelectLearnerEdit" />
+        <activity android:name=".CreateViewPDF"></activity>
+    </application>
+
+</manifest>

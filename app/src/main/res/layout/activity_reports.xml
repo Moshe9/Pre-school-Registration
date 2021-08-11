@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorAccentWhite"
+    android:layout_height="match_parent"
+    tools:context="za.ac.cut.harvestseedpre_school.Reports">
+
+
+
+    <ImageView
+        android:layout_marginTop="40dp"
+        android:layout_width="200dp"
+        android:layout_height="140dp"
+        android:id="@+id/imageView3"
+        android:contentDescription="@string/app_name"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/harvest" />
+    <TextView
+        android:id="@+id/reg"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Choose what to report:"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:padding="30dp"
+        android:layout_height="fill_parent">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_learner_reports"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:clickable="true"
+                android:contentDescription="@string/app_name"
+                android:onClick="AddLearnerReport"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/lreports" />
+
+            <ImageView
+                android:id="@+id/iv_maintenance_reports"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:onClick="AddMaintenanceReport"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:padding="5dp"
+                android:src="@drawable/mreports"
+                android:adjustViewBounds="true"/>
+
+
+
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1">
+
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">HarvestSeedPreSchool</string>
+
+
+    <array name="type">
+        <item>Half Day</item>
+        <item>Full Day</item>
+    </array>
+    <array name="roles">
+        <item>Admin</item>
+        <item>Default</item>
+        <item>Master</item>
+    </array>
+    <array name="class_name">
+        <item>Class A</item>
+        <item>Class B</item>
+        <item>Class C</item>
+        <item>Class D</item>
+        <item>Class E</item>
+        <item>Class F</item>
+        <item>Silver Saints</item>
+    </array>
+    <array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </array>
+    <array name="race">
+        <item>Black</item>
+        <item>White</item>
+        <item>Asian</item>
+        <item>Indian</item>
+        <item>Coloured</item>
+    </array>
+    <array name="maintenance">
+        <item>Water Leakage</item>
+        <item>Electrical Fault</item>
+    </array>
+    <array name="learner_report">
+        <item>Just for information</item>
+        <item>Learner Progress</item>
+        <item>Parents meeting</item>
+    </array>
+
+    <array name="language">
+        <item>English</item>
+        <item>Afrikaans</item>
+    </array>
+    <array name="medical_name">
+        <item>Medical Aid</item>
+        <item>Discovery</item>
+        <item>Bonitas</item>
+        <item>Medi-Help</item>
+    </array>
+</resources>

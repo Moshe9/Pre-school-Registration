@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    // Material
+    <dimen name="md_styled_text_title">20sp</dimen>
+    <dimen name="md_styled_text_description">16sp</dimen>
+    <dimen name="md_styled_dialog_header">120dp</dimen>
+    <dimen name="md_styled_pic_size">44dp</dimen>
+</resources>

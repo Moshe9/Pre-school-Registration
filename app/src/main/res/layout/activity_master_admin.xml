@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccentWhite"
+    tools:context="za.ac.cut.harvestseedpre_school.MasterAdmin">
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="200dp"
+        android:layout_height="140dp"
+        android:id="@+id/imageView3"
+        android:contentDescription="@string/app_name"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/harvest" />
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:padding="30dp"
+        android:layout_height="fill_parent">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_tuckshop_master"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:clickable="true"
+                android:contentDescription="@string/app_name"
+                android:onClick="onClick"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/tuckshop" />
+
+            <ImageView
+                android:id="@+id/iv_maintenance_master"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:clickable="true"
+                android:contentDescription="@string/app_name"
+                android:onClick="onClick"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/mreports" />
+
+
+
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_learner_master"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:clickable="true"
+                android:contentDescription="@string/app_name"
+                android:onClick="onClick"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/lreports" />
+
+            <ImageView
+                android:id="@+id/iv_set_roles"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:clickable="true"
+                android:contentDescription="@string/app_name"
+                android:onClick="onClick"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/useroles" />
+
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
